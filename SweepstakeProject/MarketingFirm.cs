@@ -8,5 +8,25 @@ namespace SweepstakeProject
 {
     class MarketingFirm
     {
+        int testNum = 0;
+
+
+        public ISweepstakesManager manager;
+       public MarketingFirm(ISweepstakesManager manager)
+        {
+            this.manager = manager;
+        }
+        public void MakeManager()
+        {
+
+        }
+
+
+
+
+
+
+
     }
 }
+
