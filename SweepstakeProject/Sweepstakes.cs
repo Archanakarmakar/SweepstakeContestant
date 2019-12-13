@@ -19,11 +19,13 @@ namespace SweepstakeProject
         public Sweepstakes(string name)
         {
             this.name = name;
+            Max_Num = User.ManageNumContest(name);
         }
         public void RegisterContestant(Contestant contestant)
         {
             contestants.Add(contestant.Registration_Num,contestant);
-           // contestants.Add(contestant.First_Name, contestant);
+            PrintContestantInfo(contestant);
+           
         }  
         public string PickWinner()
         {

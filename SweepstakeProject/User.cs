@@ -41,7 +41,7 @@ namespace SweepstakeProject
             bool validation = false;
             while (!validation)
             {
-                Console.WriteLine("Would you like to stack your Sweepstakes or queue them? Type s/q.");
+                Console.WriteLine("Would you like to Stack your Sweepstakes or Queue them? Type Stack/q.");
                 string choice = Console.ReadLine();
                 if (choice == "Stack" || choice == "Queue")
                 {

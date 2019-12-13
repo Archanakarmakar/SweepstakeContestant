@@ -23,16 +23,16 @@ namespace SweepstakeProject
             Sweepstakes newSweepstake = new Sweepstakes("TEST#" + testNum);
             manager.InsertSweepstakes(newSweepstake);
         }
-
-        public void SetSweepstake(Sweepstakes newSweepstake)
+        public void RunSweepstake(Sweepstakes newSweepstake)
         {
             Console.WriteLine("Welcome to the " + newSweepstake.name + " Sweepstakes!");
             for (int i = 0; i < newSweepstake.Max_Num; i++)
             {
-              Contestant newContestant = new Contestant();
-              Console.WriteLine("Contestant #" + (i + 1) + ", Please enter your name and email address.");
+                Contestant newContestant = new Contestant();
+                Console.WriteLine("Contestant #" + (i + 1) + ", Please enter your information..........");
+                newSweepstake.RegisterContestant(newContestant);
             }
-              Console.WriteLine(newSweepstake.PickWinner() + " is the winner!");
+            Console.WriteLine(newSweepstake.PickWinner() + " is the winner!");
         }
     }
 }

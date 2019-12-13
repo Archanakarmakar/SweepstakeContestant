@@ -11,8 +11,7 @@ namespace SweepstakeProject
         public static ISweepstakesManager manager;
         static void Main(string[] args)
         {
-
-            string choice = User.ChooseManagerType();
+          string choice = User.ChooseManagerType();
             ISweepstakesManager manager = null;
             switch (choice)
             {
@@ -24,6 +23,14 @@ namespace SweepstakeProject
                     break;
             }
             MarketingFirm marketingFirm = new MarketingFirm(manager);
+            marketingFirm.MakeSweepstake();
+            marketingFirm.MakeSweepstake();
+            marketingFirm.MakeSweepstake();
+            marketingFirm.RunSweepstake(marketingFirm.manager.GetSweepstakes());
+            marketingFirm.RunSweepstake(marketingFirm.manager.GetSweepstakes());
+            marketingFirm.RunSweepstake(marketingFirm.manager.GetSweepstakes());
+
+            Console.ReadLine();
         }
     }
 }
