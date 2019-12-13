@@ -9,6 +9,7 @@ namespace SweepstakeProject
     class SweepstakesStackManager : ISweepstakesManager
     {
         Stack<Sweepstakes> sweepstakesStack = new Stack<Sweepstakes>();
+        
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             Console.WriteLine("Sweepstakes push in Stack....");

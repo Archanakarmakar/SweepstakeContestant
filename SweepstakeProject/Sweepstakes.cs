@@ -20,12 +20,12 @@ namespace SweepstakeProject
         {
             this.name = name;
         }
-        void RegisterContestant(Contestant contestant)
+        public void RegisterContestant(Contestant contestant)
         {
             contestants.Add(contestant.Registration_Num,contestant);
            // contestants.Add(contestant.First_Name, contestant);
         }  
-        string PickWinner()
+        public string PickWinner()
         {
             Random r = new Random();
             WinningGame = r.Next(1, Max_Num + 1);
