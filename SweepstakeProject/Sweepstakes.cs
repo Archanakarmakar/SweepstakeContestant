@@ -38,9 +38,9 @@ namespace SweepstakeProject
         {
             Random random = new Random();
             int winnerContestant;
-            winnerContestant = random.Next(contestantsDictionary.Count) + 1;            // assign operator; ex. y = x+1
+            winnerContestant = random.Next(contestantsDictionary.Count + 1);            // assign operator; ex. y = x+1
             winner = contestantsDictionary[winnerContestant];                           // pick value winner in dictionary same as below
-                                                                                        // contestantsDictionary.TryGetValue(winnerContestant, out winner);            // TryGetValue to pick winner
+                                                                                        // contestantsDictionary.TryGetValue(winnerContestant, out winner);           
             string name = "First Name: " + winner.First_Name + "   Last Name: " + winner.Last_Name + "   Registration Number: " + winner.Registration_Num;
             return name;
 

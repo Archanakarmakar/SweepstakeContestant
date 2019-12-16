@@ -26,7 +26,7 @@ namespace SweepstakeProject
             Contestant contestant2 = new Contestant();
             contestant2.Email_Address = "archana@gmail.com";
             contestant2.First_Name = "archana";
-            contestant2.Last_Name = "kar";
+            contestant2.Last_Name = "karmakar";
             sweepstakes.RegisterContestant(contestant2);
 
             string winner = sweepstakes.PickWinner();
